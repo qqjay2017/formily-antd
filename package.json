@@ -8,6 +8,7 @@
     "packages/*",
     "devtools/*"
   ],
+
   "scripts": {
     "build": "rimraf -rf packages/*/{lib,dist,esm} && lerna run build",
     "build:docs": "dumi build",
@@ -157,10 +158,7 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alibaba/formily.git"
-  },
+ 
   "config": {
     "ghooks": {
       "pre-commit": "lint-staged",
