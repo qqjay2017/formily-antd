@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
+          registry-url:  http://svn.xjjchain.com:8081/repository/npm-g/
       - run: |
           yarn -v
           yarn --ignore-engines
@@ -24,7 +24,7 @@ jobs:
           yarn test:prod
         env:
           NODE_OPTIONS: --max_old_space_size=4096
-          REGISTRY: https://registry.npmjs.org
+          REGISTRY:  http://svn.xjjchain.com:8081/repository/npm-g/
       - uses: janrywang/github-tag-release@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
