@@ -1,6 +1,6 @@
 {
-  "name": "@formily/antd",
-  "version": "2.3.0",
+  "name": "@core/formily-antd",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "lib",
   "module": "esm",

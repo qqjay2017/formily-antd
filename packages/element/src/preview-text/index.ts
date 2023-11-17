@@ -27,7 +27,7 @@ export const usePlaceholder = (value?: Ref<any>) => {
   const placeholder = computed(() => {
     return isValid(value?.value) && value.value !== ''
       ? value.value
-      : resolveComponent(placeholderCtx.value) || 'N/A'
+      : resolveComponent(placeholderCtx.value) || '--'
   })
   return placeholder
 }

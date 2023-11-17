@@ -25,12 +25,12 @@ import {
 import cls from 'classnames'
 import { formatMomentValue, usePrefixCls } from '../__builtins__'
 
-const PlaceholderContext = createContext<React.ReactNode>('N/A')
+const PlaceholderContext = createContext<React.ReactNode>('--')
 
 const Placeholder = PlaceholderContext.Provider
 
 const usePlaceholder = (value?: any) => {
-  const placeholder = useContext(PlaceholderContext) || 'N/A'
+  const placeholder = useContext(PlaceholderContext) || '--'
   return !isEmpty(value) ? value : placeholder
 }
 

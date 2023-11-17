@@ -40,6 +40,7 @@
     "version:preminor": "lerna version preminor --preid beta",
     "version:major": "lerna version major",
     "release:force": "lerna publish from-package --yes",
+    "release:antd": "lerna publish from-package --yes",
     "lint": "eslint ."
   },
   "resolutions": {

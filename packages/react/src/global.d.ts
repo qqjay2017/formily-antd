@@ -6,3 +6,5 @@ declare global {
     export { Types }
   }
 }
+
+declare module 'classnames'
